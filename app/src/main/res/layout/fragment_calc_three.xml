@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.CalcTwoFragment">
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/weightTIL"
+        app:layout_constraintStart_toStartOf="@+id/weightTIL"
+        app:layout_constraintTop_toBottomOf="@+id/weightTIL" />
+
+    <TextView
+        android:id="@+id/potassiumDeficiencyTV"
+        style="@style/text_info_style"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/zero_zero"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@+id/spinner"
+        app:layout_constraintStart_toStartOf="@+id/spinner"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/calculateBTN"
+        style="@style/MyButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="64dp"
+        android:text="@string/calculate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/potassiumDeficiencyDescriptionTV"
+        app:layout_constraintStart_toStartOf="@+id/potassiumDeficiencyDescriptionTV"
+        app:layout_constraintTop_toBottomOf="@+id/potassiumDeficiencyDescriptionTV" />
+
+    <TextView
+        android:id="@+id/potassiumDeficiencyDescriptionTV"
+        style="@style/text_info_style"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/potassium_deficiency"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/calculateBTN"
+        app:layout_constraintEnd_toEndOf="@+id/spinner"
+        app:layout_constraintStart_toStartOf="@+id/spinner"
+        app:layout_constraintTop_toBottomOf="@+id/potassiumDeficiencyTV" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/serumPotassiumTIL"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:suffixText="ММОЛЬ/Л">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/myTILSettings"
+            android:hint="@string/serum_potassium" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/weightTIL"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/serumPotassiumTIL"
+        app:layout_constraintStart_toStartOf="@+id/serumPotassiumTIL"
+        app:layout_constraintTop_toBottomOf="@+id/serumPotassiumTIL"
+        app:suffixText="КГ">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/myTILSettings"
+            android:hint="@string/weight" />
+    </com.google.android.material.textfield.TextInputLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

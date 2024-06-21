@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Universal_medical_calculator</string>
+    <string name="calculators">Калькуляторы</string>
+    <string name="patients">Пациенты</string>
+    <string name="calc_one">ИМТ</string>
+    <string name="calc_two">Скорость инфузии препарата</string>
+    <string name="calc_three">Дефицит калия</string>
+    <string name="calc_four">Скорость вн/в препарата</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_patient">Добавить пациента</string>
+    <string name="cancel">Отмена</string>
+    <string name="add">Добавить</string>
+    <string name="name">ФИО пациента</string>
+    <string name="age">Возраст</string>
+    <string name="exit">Выход</string>
+    <string name="about">Подробно о пациенте</string>
+    <string name="delete">Удалить пациента</string>
+    <string name="calculate">Рассчитать</string>
+    <string name="height">Рост пациента</string>
+    <string name="weight">Вес пациента</string>
+    <string name="imt">Расчёт индекса массы тела определяет в каком соотношении находятся
+        вес и рост, калькулятор подходит для взрослых мужчин и женщин.\n\n
+        16 и менее - Выраженный дефицит массы тела \n
+        16-18,5 - Недостаточная (дефицит) масса тела\n
+        18,5-25	- Норма\n
+        25-30 - Избыточная масса тела (предожирение)\n
+        30-35 -	Ожирение первой степени\n
+        35-40 -	Ожирение второй степени\n
+        40 и более	Ожирение третьей степени (морбидное)
+    </string>
+    <string name="drug_infusion_rate">Скорость инфузии препарата обозначает количество препарата, которое вводится в организм пациента в единицу времени. Она измеряется в миллилитрах (мл) или каплях в минуту (кап/мин) и является важным параметром при проведении инфузионной терапии.\n\nЗависимо от индивидуальных особенностей пациента и характера заболевания скорость инфузии может быть лечебной, поддерживающей или дозировочной. Контроль скорости инфузии проводится медицинским персоналом, который следит за состоянием пациента и корректирует скорость инфузии при необходимости.
+    </string>
+    <string name="volume_of_solution">Объем препарата</string>
+    <string name="potassium_deficiency">Калькулятор для расчета дефицита калия в плазме крови и объема растворов различной концентрации для его возмещения. Расчет проводится по универсальной формуле, в качестве нормы взята концентрация калия в плазме - 5 ммоль/л.</string>
+    <string name="time">Время процедуры</string>
+    <string name="drug_speed">Калькулятор для расчета скорости внутривенного капельного введения препарата. Расчет скорости проводится на основании данных об объеме вливаемого лекарственного раствора и планируемого времени его введения.</string>
+    <string name="serum_potassium">Калий сыворотки</string>
+    <string name="number_of_drops">Количество капель</string>
+    <string name="zero_zero">0.0</string>
+    <string name="delete_all_data">Удалить все данные</string>
+    <string name="search">Поиск</string>
+</resources>

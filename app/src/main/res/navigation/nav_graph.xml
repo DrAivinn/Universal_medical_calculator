@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/calculatorsFragment">
+
+    <fragment
+        android:id="@+id/calculatorsFragment"
+        android:name="com.example.universal_medical_calculator.fragments.CalculatorsFragment"
+        android:label="@string/calculators"
+        tools:layout="@layout/fragment_calculators" >
+        <action
+            android:id="@+id/action_calculatorsFragment_to_calcOneFragment"
+            app:destination="@id/calcOneFragment"
+
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_calculatorsFragment_to_calcTwoFragment"
+            app:destination="@id/calcTwoFragment" />
+        <action
+            android:id="@+id/action_calculatorsFragment_to_calcThreeFragment"
+            app:destination="@id/calcThreeFragment" />
+        <action
+            android:id="@+id/action_calculatorsFragment_to_calcFourFragment"
+            app:destination="@id/calcFourFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/patientsFragment"
+        android:name="com.example.universal_medical_calculator.fragments.PatientsFragment"
+        android:label="@string/patients"
+        tools:layout="@layout/fragment_patients" >
+        <action
+            android:id="@+id/action_patientsFragment_to_patientInfoFragment"
+            app:destination="@id/patientInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/calcOneFragment"
+        android:name="com.example.universal_medical_calculator.fragments.CalcOneFragment"
+        android:label="@string/calc_one"
+        tools:layout="@layout/fragment_calc_one" >
+        <action
+            android:id="@+id/action_calcOneFragment_to_calculatorsFragment"
+            app:destination="@id/calculatorsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/calcTwoFragment"
+        android:name="com.example.universal_medical_calculator.fragments.CalcTwoFragment"
+        android:label="@string/calc_two"
+        tools:layout="@layout/fragment_calc_two" />
+    <fragment
+        android:id="@+id/calcThreeFragment"
+        android:name="com.example.universal_medical_calculator.fragments.CalcThreeFragment"
+        android:label="@string/calc_three"
+        tools:layout="@layout/fragment_calc_three" />
+    <fragment
+        android:id="@+id/calcFourFragment"
+        android:name="com.example.universal_medical_calculator.fragments.CalcFourFragment"
+        android:label="@string/calc_four"
+        tools:layout="@layout/fragment_calc_four" />
+    <fragment
+        android:id="@+id/patientInfoFragment"
+        android:name="com.example.universal_medical_calculator.fragments.PatientInfoFragment"
+        android:label="О пациенте"
+        tools:layout="@layout/fragment_patient_info" />
+</navigation>

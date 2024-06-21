@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_200"
+    tools:context=".fragments.CalculatorsFragment">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/calcOneBTN"
+        style="@style/MyButtonStyle"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/calc_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/calcTwoBTN"
+        style="@style/MyButtonStyle"
+        android:layout_marginTop="16dp"
+        android:text="@string/calc_two"
+        app:layout_constraintEnd_toEndOf="@+id/calcOneBTN"
+        app:layout_constraintStart_toStartOf="@+id/calcOneBTN"
+        app:layout_constraintTop_toBottomOf="@+id/calcOneBTN" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/calcThreeBTN"
+        style="@style/MyButtonStyle"
+        android:layout_marginTop="16dp"
+        android:text="@string/calc_three"
+        app:layout_constraintEnd_toEndOf="@+id/calcTwoBTN"
+        app:layout_constraintStart_toStartOf="@+id/calcTwoBTN"
+        app:layout_constraintTop_toBottomOf="@+id/calcTwoBTN" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/calcFourBTN"
+        style="@style/MyButtonStyle"
+        android:layout_marginTop="16dp"
+        android:text="@string/calc_four"
+        app:layout_constraintEnd_toEndOf="@+id/calcThreeBTN"
+        app:layout_constraintStart_toStartOf="@+id/calcThreeBTN"
+        app:layout_constraintTop_toBottomOf="@+id/calcThreeBTN" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
